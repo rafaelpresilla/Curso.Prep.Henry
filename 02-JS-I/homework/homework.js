@@ -68,9 +68,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1 > str2) {return true}
- else {return false}
- 
+  return str1.length === str2.length
 }
 
 function menosQueNoventa(num) {
@@ -120,23 +118,20 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-var elevado2 = num ** 2;
-{return elevado2}
+return Math.pow (num,2);
  
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  var elevado3 = num ** 3;
-{return elevado3}
+  return Math.pow (num,3);
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  var elevadoEXP = num ** exponent;
-{return elevadoEXP}
+  return Math.pow (num,exponent);
 }
 
 function redondearNumero(num) {
@@ -167,9 +162,9 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
 
   var result2 = Math.sign(numero)
-  if (result2>0) { return("es positivo") }
-  if (result2<0) {  return("es postivo") }
-  if (result2 == 0) {return false}
+  if (result2>0) { return("Es positivo") }
+  else if (result2<0) {  return("Es negarivo") }
+  else {return false}
 }
 
 

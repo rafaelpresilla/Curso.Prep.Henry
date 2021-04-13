@@ -228,6 +228,12 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
+
+  var numentero = numero.toString()
+  if (numentero.length === 3) {
+    return true;
+    }
+    return false;
    }
   
  
@@ -236,16 +242,16 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
 
-numero = 5 ;
+var bandera = 0 ;
 do {
-return (numero * 9);
-  numero++;
+ numero = numero + 5;
+ bandera = bandera + 1;
+ }
+
+ while  (bandera < 8)
+ return numero;
+  
 } 
-
-while (numero === 45);
-
-}
-
 
 
 // No modificar nada debajo de esta línea
